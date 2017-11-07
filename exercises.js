@@ -198,7 +198,15 @@ console.log("spareChange" ,spareChange(105));
  * Console.log your result.
 */ 
 
-
+function dirty30(one, two, three){
+	var sum = one + two + three;
+	if(sum > 30){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(dirty30(10, 15, 11));
 
 /*
  * #10
@@ -212,7 +220,15 @@ console.log("spareChange" ,spareChange(105));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+	if(num%2 === 6){
+		return true;
+	}else{
+		return false;
+	}
+}
 
+console.log(evenStevens(6));
 
 
 /*
@@ -228,8 +244,16 @@ console.log("spareChange" ,spareChange(105));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+	if(cover >= 21 && age >= 21){
+		return "welcome to the legends lounge.";
+	}else{
+		return "Chuck E Cheese is across the street.";
+	}
+	}
+	console.log(daClub(21, 21));
 
-/*
+/*}
  * #12
  * Function - graduation
  * Create a function named `graduation` which takes two parameters: `credits` and `thesis`.
@@ -242,7 +266,15 @@ console.log("spareChange" ,spareChange(105));
  * Console.log your result.
 */ 
 
-
+function graduation(credit, thesis){
+	if(credit >= 120||thesis === true){
+		return "Congratulations on a job well done!";
+	}else{
+		return "See you in summer school.";
+	}
+}
+var gradresults = graduation(100,true);
+console.log(gradresults);
 
 /*
  * #13
@@ -373,10 +405,6 @@ var phrase = "An apple a day keeps Alice feeling awesome!";
  
   
   
-
-
-
-
 
 
 
