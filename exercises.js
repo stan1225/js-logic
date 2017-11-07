@@ -96,7 +96,7 @@ function mustBeTrue(boo){
 	}
 }
 
-console.log(mustBeTrue(true))
+console.log(mustBeTrue(true));
 
 
 /*
@@ -111,8 +111,12 @@ console.log(mustBeTrue(true))
  * Console.log your result.
 */
 
-
-
+function bigBird(word){
+	if(word.length === 3){
+		return "Word to Big Bird!";
+	}
+}
+console.log(bigBird("dog"));
 /*
  * #6
  * Function - isEqual
@@ -126,6 +130,14 @@ console.log(mustBeTrue(true))
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if(first === second){
+		return "You look mahvelous!";
+	}else{
+		return "I dont know who you are anymore.";
+	}
+}
+console.log(isEqual("ying", "yang"));
 
 /*
  * #7
@@ -133,12 +145,21 @@ console.log(mustBeTrue(true))
  * Create a function named `notEqual` which takes two parameters: `first` and `second`.
  *
  *  @param Datatype: String `first`
- *  @param Datatype: String `second`
+ *  @param Datatype: String `second
  *  @return Datatype: String
  *
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
+
+function notEqual(first, second){
+	if(first !== second){
+		return "opposites do attract.";
+	}else{
+		return "Cause it's like you're my mirror.";
+	}
+}
+console.log(notEqual("day", "night"));
 
 
 /*
@@ -152,7 +173,15 @@ console.log(mustBeTrue(true))
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+function spareChange(money){
+	if(money > 100){
+		return true;
+	}else{
+		return false;
+	}
+}
 
+console.log("spareChange" ,spareChange(105));
 
 
 /*
