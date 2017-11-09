@@ -288,7 +288,21 @@ console.log(gradresults);
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+	if(speed < 50){
+		return "You are riding Honolulu's Rail";
+	}else if (speed < 100){
+		return "You are riding an Amtrack";
+	}else{
+		return "You are ballin on a Shinkansen";
+	}
+}
 
+console.log(moneyTrain(200));
+
+
+
+	// body..
 /*
  * #14
  * Function - buyDoughnut
@@ -303,6 +317,20 @@ console.log(gradresults);
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 50;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+	if (budget >= doughnutPrice){
+		budget -=doughnutPrice;
+		doughnutBought++;
+	}
+}
+
+buyDoughnut();
+console.log("budget", budget);
+console.log("bought", doughnutBought);
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
